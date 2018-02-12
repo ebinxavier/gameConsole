@@ -5,6 +5,7 @@ import Header from './Header'
 import Footer from './Footer'
 import Home from './home/Home'
 import SignIn from './home/signin'
+import SignUp from './home/signup'
 
 
 // More components
@@ -25,7 +26,8 @@ class RouteApp extends Component {
         <Switch>
           <Route exact path='/' component={Home}/>
           <Route path='/dev' component={Developer}/>
-          <Route path='/sign' component={SignIn}/>
+          <Route path='/signin' component={SignIn}/>
+          <Route path='/signup' component={SignUp}/>
         </Switch>
      </div>
       );
