@@ -10,10 +10,16 @@
   color:#fff;
   text-decoration: none;
 }
-.footer{
+.header{
   position: fixed;
   width: 100%;
-  bottom: 0px;
+  z-index: 99;
+  top: 0px;
+}
+.footer{
+  /* position: fixed;
+  width: 100%;
+  bottom: 0px; */
   background:black;
   color: #70726F;
   min-height:80px;
@@ -32,13 +38,17 @@
   color: white;
   font-weight: bold;
 }
+.pageBody{
+  margin-top: 80px;
+  min-height: 100vh;  
+}
 body{
   background: lavender;
 }
 
 
 /* hamburger animation */
-
+@media only screen and (max-width : 768px) {
 
 #nav-icon1, #nav-icon2, #nav-icon3, #nav-icon4 {
   width: 60px;
@@ -146,4 +156,5 @@ body{
   -moz-transform: rotate(-135deg);
   -o-transform: rotate(-135deg);
   transform: rotate(-135deg);
+}
 }
