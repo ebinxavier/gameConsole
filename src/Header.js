@@ -42,13 +42,13 @@ class Header extends Component {
             <Collapse isOpen={this.state.isOpen} navbar>
               <Nav className="ml-auto" navbar>
                 <NavItem>
-                <Link className="navigation" to='/dev'><i className="fa fa-puzzle-piece"></i> Developer Mode </Link>
+                <Link onClick={this.toggle} className="navigation" to='/dev'><i className="fa fa-puzzle-piece"></i> Developer Mode </Link>
                 </NavItem>
                 <NavItem>
-                <Link className="navigation" to='/signin'> <i className="fa fa-sign-in" aria-hidden="true"></i> Sign In </Link>
+                <Link onClick={this.toggle} className="navigation" to='/signin'> <i className="fa fa-sign-in" aria-hidden="true"></i> Sign In </Link>
                 </NavItem>
                 <NavItem>
-                <Link className="navigation" to='/signin'> <i className="fa fa-building" aria-hidden="true"></i> About </Link>
+                <Link onClick={this.toggle} className="navigation" to='/about'> <i className="fa fa-building" aria-hidden="true"></i> About </Link>
                 </NavItem>
               </Nav>
             </Collapse>

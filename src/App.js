@@ -6,7 +6,7 @@ import Footer from './Footer'
 import Home from './home/Home'
 import SignIn from './home/signin'
 import SignUp from './home/signup'
-
+import About from './home/About'
 
 // More components
 class Developer extends Component {
@@ -27,7 +27,7 @@ class RouteApp extends Component {
           <Route exact path='/' component={Home}/>
           <Route path='/dev' component={Developer}/>
           <Route path='/signin' component={SignIn}/>
-          <Route path='/signup' component={SignUp}/>
+          <Route path='/about' component={About}/>
         </Switch>
      </div>
       );
