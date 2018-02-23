@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import {Container, ButtonGroup, Card, CardImg, CardText, CardBody,
+import {Container, Card, CardImg, CardText, CardBody,
   CardTitle, CardSubtitle, Button,Row,Col } from 'reactstrap';
 import img from '../assets/game1.jpg';
 

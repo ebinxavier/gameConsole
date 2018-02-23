@@ -4,8 +4,8 @@ import {
     NavbarToggler,
     NavbarBrand,
     Nav,
-    NavItem,
-    NavLink } from 'reactstrap';
+    NavItem
+  } from 'reactstrap';
 import React, { Component } from 'react';
 import {Link} from 'react-router-dom';
 import './App.css';
@@ -17,7 +17,8 @@ class Header extends Component {
   
       this.toggle = this.toggle.bind(this);
       this.state = {
-        isOpen: false
+        isOpen: false,
+        currentPage:0
       };
     }
     toggle() {
@@ -27,6 +28,9 @@ class Header extends Component {
     }
   
     render() {
+
+     
+
       return (
         <div className="header"> 
             
@@ -42,16 +46,16 @@ class Header extends Component {
             <Collapse isOpen={this.state.isOpen} navbar>
               <Nav className="ml-auto" navbar>
                 <NavItem >
-                <Link className="navigation" to='/'><i className="fa fa-home"></i> Home </Link>
+                <Link  className={"navigation"} to='/'><i className="fa fa-home"></i> Home </Link>
                 </NavItem>
                 <NavItem>
-                <Link className="navigation" to='/dev'><i className="fa fa-puzzle-piece"></i> Developer Mode </Link>
+                <Link className={"navigation"}  to='/dev'><i className="fa fa-puzzle-piece"></i> Developer Mode </Link>
                 </NavItem>
                 <NavItem>
-                <Link className="navigation" to='/signin'> <i className="fa fa-sign-in" aria-hidden="true"></i> Sign In </Link>
+                <Link className={"navigation"}  to='/signin'> <i className="fa fa-sign-in" aria-hidden="true"></i> Sign In </Link>
                 </NavItem>
                 <NavItem>
-                <Link className="navigation" to='/about'> <i className="fa fa-building" aria-hidden="true"></i> About </Link>
+                <Link  className={"navigation"}  to='/about'> <i className="fa fa-building" aria-hidden="true"></i> About </Link>
                 </NavItem>
               </Nav>
             </Collapse>

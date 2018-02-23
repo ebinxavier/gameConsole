@@ -10,6 +10,10 @@
   color:#fff;
   text-decoration: none;
 }
+.navigationSelected{
+  color:#fff;
+  text-decoration: none;
+}
 .header{
   position: fixed;
   width: 100%;
@@ -17,9 +21,6 @@
   top: 0px;
 }
 .footer{
-  /* position: fixed;
-  width: 100%;
-  bottom: 0px; */
   background:black;
   color: #70726F;
   min-height:80px;
